@@ -238,7 +238,18 @@ public class EstudandoAlgoritimos {
             System.out.println(" A AREA DO RETANGULO É: " + base*altura);
             System.out.println(" A DIAGONAL DO RETANGULO É: " + diagRetr);*/
 
+            // ATV 21 - ENTRAR COM O RAIO DE UM CIRCULO E IMPRIMIR A AREA E O PERIMETRO.
+            
+            Scanner scanner = new Scanner(System.in);
 
+            System.out.print(" DIGITE O RAIO DO CIRCULO: ");
+            double raioCirculo = scanner.nextDouble();
+
+            double peri = 2 * 3.14 * raioCirculo;
+            double area = 3.14 * Math.pow(raioCirculo,2);
+
+            System.out.println("\n PERIMETRO: " + peri);
+            System.out.println("\n AREA: " + area);
 
 
     
