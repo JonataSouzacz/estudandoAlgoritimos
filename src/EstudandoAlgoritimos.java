@@ -238,7 +238,7 @@ public class EstudandoAlgoritimos {
             System.out.println(" A AREA DO RETANGULO É: " + base*altura);
             System.out.println(" A DIAGONAL DO RETANGULO É: " + diagRetr);*/
 
-            // ATV 21 - ENTRAR COM O RAIO DE UM CIRCULO E IMPRIMIR A AREA E O PERIMETRO.
+        /*  // ATV 21 - ENTRAR COM O RAIO DE UM CIRCULO E IMPRIMIR A AREA E O PERIMETRO.
             
             Scanner scanner = new Scanner(System.in);
 
@@ -249,13 +249,42 @@ public class EstudandoAlgoritimos {
             double area = 3.14 * Math.pow(raioCirculo,2);
 
             System.out.println("\n PERIMETRO: " + peri);
-            System.out.println("\n AREA: " + area);
+            System.out.println("\n AREA: " + area);*/
+
+        /*  // ATV 22 - ENTRAR COM O LADO DE UM QUADRADO E IMPRIMIR O PERIMETRO, AREA E DIAGONAL.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE O TAMANHO DE UM LADO DO QUADRADO: ");
+            double ladoQuad = scanner.nextDouble();
+
+            double area = ladoQuad*ladoQuad;
+            double peri = ladoQuad * 4;
+            double diag = ladoQuad* Math.sqrt(2);
+
+            System.out.println("\n PERIMETRO: " + peri);
+            System.out.println(" AREA: " + area);
+            System.out.println(" DIAGONAL: " + diag);*/
+    
+            // ATV 23 - ENTRAR COM OS LADOS A, B E C DE UM PARALELEPIPEDO. CALCULAR E IMPRIMIR A DIAGONAL.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE O LADO A: ");
+            double ladoA = scanner.nextDouble();
+
+            System.out.print(" DIGITE O LADO B: ");
+            double ladoB = scanner.nextDouble();
+
+            System.out.print(" DIGITE O LADO C: ");
+            double ladoC = scanner.nextDouble();
+
+            double diag = Math.sqrt(2)+(Math.pow(ladoA,2) + Math.pow(ladoB,2) + Math.pow(ladoC,2));
+
+            System.out.println(" DIAGONAL DO PARALELEPIPEDO É: " + Math.sqrt(diag));
 
 
-    
-    
-    
-    
+
     
     
     
