@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class EstudandoAlgoritimos {
     public static void main(String[] args) throws Exception {
         
-           // PARTE 1 - VARIÁVEL, EXPRESSÕES, FUNÇÕES, ATRIBUIÇÃO, ENTRADA E SAÍDA. 
+           // PARTE 01 - VARIÁVEL, EXPRESSÕES, FUNÇÕES, ATRIBUIÇÃO, ENTRADA E SAÍDA. 
         
 
         /*  // ATV 01 - IMPRIMA NA TELA A FRASE " É PRECISO FAZER TODOS OS ALGORITIMOS PARA APRENDER"
@@ -354,7 +354,7 @@ public class EstudandoAlgoritimos {
                 System.out.println("\n SOMA: " + (soma-5));
             }*/
     
-            // ATV 04 - ENTRAR COM UM NUMERO E IMPRIMIR A RAIZ QUADRADA DO NUMERO CASO ELE SEJA POSITIVO E O QUADRADO DO NUMERO SE ELE FOR NEGATIVO.
+        /*  // ATV 04 - ENTRAR COM UM NUMERO E IMPRIMIR A RAIZ QUADRADA DO NUMERO CASO ELE SEJA POSITIVO E O QUADRADO DO NUMERO SE ELE FOR NEGATIVO.
 
             Scanner scanner = new Scanner(System.in);
 
@@ -366,10 +366,105 @@ public class EstudandoAlgoritimos {
             }
             else {
                 System.out.println(" QUADRADO DO NUMERO: " + Math.pow(num,2));
+            }*/
+    
+        /*  // ATV 05 - ENTRAR COM UM NUMERO E IMPRIMIR UMA DAS MENSAGENS " É MULTIPLO DE 3 OU NÃO É MULTIPLO DE 3".
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO: ");
+            int num = scanner.nextInt();
+            
+            if (num%3 == 0) {
+                System.out.println(" É MULTIPLO DE 3!");
             }
-    
-    
-    
+            else{
+                System.out.println(" NÃO É MULTIPLO DE 3!");
+            }*/
+            
+        /*  // ATV 06 - ENTRAR COM UM NUMERO E INFORMAR SE ELE É OU NÃO DIVISIVEL POR 5.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO: ");
+            int num = scanner.nextInt();
+
+            if (num%5 == 0) {
+                System.out.println(" É DIVISIVEL POR 5!");
+            }
+            else {
+                System.out.println(" NÃO É DIVISIVEL POR 5!");
+            }*/
+
+        /*  // ATV 07 - ENTRAR COM UM NUMERO E INFORMAR SE ELE É DIVISIVEL POR 3 E POR 7.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO: ");
+            int num = scanner.nextInt();
+
+            if (num%3==0 && num%7==0) {
+                System.out.println(" É DIVISIVEL POR 3 E POR 7!");
+            }
+            else {
+                System.out.println(" NÃO É DIVISIVEL POR 3 E POR 7!");
+            }*/
+
+        /*  // ATV 08 - ENTRAR COM UM NUMERO E INFORMAR SE ELE É DIVISIVEL POR 10, POR 5, POR 2 OU SE NÃO É DIVISIVEL POR NENHUM DESSES.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO: ");
+            int num = scanner.nextInt();
+
+            if (num%10==0) {
+                System.out.println(" É DIVISIVEL POR 10!");
+            }
+            if (num%5==0) {
+                System.out.println(" É DIVISIVEL POR 5!");
+            }
+            if (num%2==0) {
+                System.out.println(" É DIVISIVEL POR 2!");
+            }
+            else if (num%10!=0 && num%5!=0 && num%2!=0) {
+                System.out.println(" NÃO É DIVISIVEL POR NENHUM!");
+            }*/
+
+            // ATV 09 - QUESTÃO 98 DO LIVRO.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE SEU SALARIO: ");
+            double salBrut = scanner.nextDouble();
+
+            System.out.print(" DIGITE O VALOR DA PRESTAÇÃO QUE DESEJA PAGAR PARA QUE SEJA ANALISADO E SE REALMENTE SERÁ LIBERADO: ");
+            double valPrest = scanner.nextDouble();
+
+            double porcent = salBrut/100*30;
+                
+            if (valPrest<=porcent) {
+                System.out.println(" SEU CREDITO FOI LIBERADO!");
+            }
+            else {
+                System.out.println(" INFELIZMENTE SEU CREDITO NÃO FOI LIBERADO!");
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     
     
