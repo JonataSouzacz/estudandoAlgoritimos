@@ -430,7 +430,7 @@ public class EstudandoAlgoritimos {
                 System.out.println(" NÃO É DIVISIVEL POR NENHUM!");
             }*/
 
-            // ATV 09 - QUESTÃO 98 DO LIVRO.
+        /*  // ATV 09 - QUESTÃO 98 DO LIVRO.
 
             Scanner scanner = new Scanner(System.in);
 
@@ -447,9 +447,55 @@ public class EstudandoAlgoritimos {
             }
             else {
                 System.out.println(" INFELIZMENTE SEU CREDITO NÃO FOI LIBERADO!");
+            }*/
+
+        /*  // ATV 10 - LER UM NUMERO INTEIRO DE 3 CASAS DECIMAIS E IMPRIMIR SE O ALGARISMO DA CASA DAS CENTENAS É PAR OU IMPAR.
+            
+         Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO COM 3 CASAS DECIMAIS: ");
+            int num = scanner.nextInt();
+
+            String numConvert = Integer.toString(num);
+            String selectNum = numConvert.substring(0,1);
+            int digito1 = Integer.parseInt(selectNum);
+
+            if (digito1%2==0) {
+                System.out.println(" É PAR ");
+            }
+            else{
+                System.out.println(" É IMPAR ");
             }
 
+            // FORMA MAIS FACIL
 
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO COM 3 CASAS DECIMAIS: ");
+            int num = scanner.nextInt();
+
+            int cent = num/100;
+
+            if (cent%2==0) {
+                System.out.println(" É PAR ");
+            }
+            else{
+                System.out.println(" É IMPAR ");
+            }*/
+        
+            // ATV 11 - CONSTRUIR UM ALGORITMO QUE INDIQUE SE O NUMERO DIGITADO ESTA COMPREENDIDO ENTRE 20 E 90 OU NÃO.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO: ");
+            int num = scanner.nextInt();
+
+            if (num>=20 && num<=90) {
+                System.out.println(" O NUMERO ESTA ENTRE 20 E 90");
+            }
+            else{
+                System.out.println(" O NUMERO NÃO ESTA ENTRE 20 E 90");
+            }
 
 
 
