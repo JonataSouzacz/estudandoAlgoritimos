@@ -6,6 +6,8 @@ import java.util.Scanner;
 public class EstudandoAlgoritimos {
     public static void main(String[] args) throws Exception {
         
+           // PARTE 1 - VARIÁVEL, EXPRESSÕES, FUNÇÕES, ATRIBUIÇÃO, ENTRADA E SAÍDA. 
+        
 
         /*  // ATV 01 - IMPRIMA NA TELA A FRASE " É PRECISO FAZER TODOS OS ALGORITIMOS PARA APRENDER"
         System.out.println(" É PRECISO FAZER TODOS OS ALGORITIMOS PARA APRENDER\n");*/
@@ -266,7 +268,7 @@ public class EstudandoAlgoritimos {
             System.out.println(" AREA: " + area);
             System.out.println(" DIAGONAL: " + diag);*/
     
-            // ATV 23 - ENTRAR COM OS LADOS A, B E C DE UM PARALELEPIPEDO. CALCULAR E IMPRIMIR A DIAGONAL.
+        /*  // ATV 23 - ENTRAR COM OS LADOS A, B E C DE UM PARALELEPIPEDO. CALCULAR E IMPRIMIR A DIAGONAL.
 
             Scanner scanner = new Scanner(System.in);
 
@@ -281,20 +283,90 @@ public class EstudandoAlgoritimos {
 
             double diag = Math.sqrt(2)+(Math.pow(ladoA,2) + Math.pow(ladoB,2) + Math.pow(ladoC,2));
 
-            System.out.println(" DIAGONAL DO PARALELEPIPEDO É: " + Math.sqrt(diag));
+            System.out.println(" DIAGONAL DO PARALELEPIPEDO É: " + Math.sqrt(diag));*/
 
+        /*  // ATV 24 - CRIAR UM ALGORITIMO QUE CALCULE E IMPRIMA A AREA DE UM TRIANGULO.
 
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE A BASE: ");
+            double base = scanner.nextDouble();
+
+            System.out.print(" DIGITE A ALTURA: ");
+            double alt = scanner.nextDouble();
+
+            double area = (base*alt)/2;
+
+            System.out.println("\n AREA DO TRIANGULO: " + area );*/
 
     
+            // PARTE 2 -  ESTRUTURAS DE SELEÇÃO
+
+        /*  // ATV 01 - ENTRAR COM UM NUMERO E IMPRIMI-LO CASO SEJA MAIOR QUE 20.
+            
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("\n DIGITE UM NUMERO: ");
+            int num = scanner.nextInt();
+
+            if (num>20){
+                System.out.println(" O NUMERO DIGITADO É: " + num);
+            }
+            else {
+                 System.out.println(" O NUMERO DIGITADO É MENOR QUE 20!\n");
+                }*/
     
+        /*  // ATV 02 - CONSTRUIR UM ALGORITMO QUE LEIA DOIS VALORES NUMÉRICOS INTEIROS E EFETUE A ADIÇÃO; CASO O RESULTADO SEJA MAIOR QUE 10, APRESENTA-LO.
+            
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print("\n DIGITE O PRIMEIRO NUMERO: ");
+            int num1 = scanner.nextInt();    
+
+            System.out.print("\n DIGITE O SEGUNDO NUMERO: ");
+            int num2 = scanner.nextInt();
+            
+            int soma = num1+num2;
+
+            if (soma > 10) {
+                System.out.println("\n SOMA: " + soma);
+            }
+            else {
+                System.out.println("\n A SOMA É MENOR QUE 10!\n");
+            }*/
+            
+        /*  // ATV 03 - QUESTÃO 92 DO LIVRO.
+
+            Scanner scanner = new Scanner(System.in);
+            
+            System.out.print("\n DIGITE O PRIMEIRO NUMERO: ");
+            int num1 = scanner.nextInt();
+
+            System.out.print("\n DIGITE O SEGUNDO NUMERO: ");
+            int num2 = scanner.nextInt();
+
+            int soma = num1+num2;
+
+            if (soma>20) {
+                System.out.println("\n SOMA: " + (soma+8));
+            }
+            if (soma<=20) {
+                System.out.println("\n SOMA: " + (soma-5));
+            }*/
     
-    
-    
-    
-    
-    
-    
-    
+            // ATV 04 - ENTRAR COM UM NUMERO E IMPRIMIR A RAIZ QUADRADA DO NUMERO CASO ELE SEJA POSITIVO E O QUADRADO DO NUMERO SE ELE FOR NEGATIVO.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO: ");
+            double num = scanner.nextDouble();
+
+            if (num>0) {
+                System.out.println(" RAIZ DO NUMERO: " + Math.sqrt(num));
+            }
+            else {
+                System.out.println(" QUADRADO DO NUMERO: " + Math.pow(num,2));
+            }
     
     
     
