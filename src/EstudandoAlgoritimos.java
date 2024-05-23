@@ -483,7 +483,7 @@ public class EstudandoAlgoritimos {
                 System.out.println(" É IMPAR ");
             }*/
         
-            // ATV 11 - CONSTRUIR UM ALGORITMO QUE INDIQUE SE O NUMERO DIGITADO ESTA COMPREENDIDO ENTRE 20 E 90 OU NÃO.
+        /*  // ATV 11 - CONSTRUIR UM ALGORITMO QUE INDIQUE SE O NUMERO DIGITADO ESTA COMPREENDIDO ENTRE 20 E 90 OU NÃO.
 
             Scanner scanner = new Scanner(System.in);
 
@@ -495,10 +495,83 @@ public class EstudandoAlgoritimos {
             }
             else{
                 System.out.println(" O NUMERO NÃO ESTA ENTRE 20 E 90");
+            }*/
+
+        /*  // ATV 12 - ENTRAR COM O ANO DE NASCIMENTO DE UMA PESSOA E E O ANO ATUAL. IMPRIMIR A IDADE DA PESSOA. NÃO SE ESQUEÇA DE VERIFICAR SE O ANO DE NASCIMENTO É UM ANO VALIDO.
+            
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE O ANO DE NASCIMENTO: ");
+            int anoNasc = scanner.nextInt();
+
+            System.out.print(" DIGITE O ANO ATUAL: ");
+            int anoAtual = scanner.nextInt();
+
+            int idade = anoNasc-anoAtual;
+            System.out.println(" IDADE: " + idade*-1);
+
+            if (anoAtual>anoNasc) {
+                System.out.println("ANO DE NASCIMENTO VÁLIDO!");
             }
+            else {
+                System.out.println(" ANO DE NASCIMENTO INVALIDO!");
+            }*/
 
+        /*  // ATV 14 - QUESTÃO 104 DO LIVRO.
 
+            Scanner scanner = new Scanner(System.in);
 
+            System.out.print(" DIGITE SEU NOME: ");
+            String nome = scanner.nextLine();
+
+            System.out.print(" DIGITE SUA IDADE: ");
+            int idade = scanner.nextInt();
+
+            System.out.print(" DIGITE SEU SEXO (F)FEMININO OU (M)MASCULINO: ");
+            String sexo = scanner.next();
+
+            // equals.() ----- USADO PARA VERIFICAR SE OS DOIS OBJETOS SÃO IGUAIS.
+
+            if (idade<25 && sexo.equals("F") || sexo.equals("f")  ) {
+                System.out.println(" ACEITA! ");
+            }
+            else{
+                System.out.println(" NÃO ACEITA! ");
+            }*/
+
+        /*  // ATV 15 - ENTRAR COM A SIGLA DO ESTADO DE UMA PESSOA E IMPRIMIR UMA DAS MENSAGENS: *CARIOCA * PAULISTA * MINEIRO *OUTROS ESTADOS. 
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE A SIGLA DO ESTADO: ");
+            String sigla = scanner.next();
+
+            if (sigla.equals("RJ") || sigla.equals("rj")) {
+                System.out.println(" CARIOCA!");
+            }
+            else if (sigla.equals("SP") || sigla.equals("sp")) {
+                System.out.println(" PAULISTA!");
+            }
+            else if (sigla.equals("MG") || sigla.equals("mg")) {
+                System.out.println(" MINEIRO!");
+            }
+            else{
+                System.out.println(" OUTROS ESTADOS!");
+            }*/
+
+            // ATV 16 - ENTRAR COM UM NOME E IMPRIMI-LO SE O PRIMEIRO CARACTERE FOR A LETRA "A" (CONSIDERAR LETRA MINUSCULA OU MAIUSCULA).
+
+            Scanner scanner = new Scanner (System.in);
+
+            System.out.print(" DIGITE UM NOME: ");
+            String nome = scanner.next();
+
+            String pLetraA = nome.substring(0,1);
+
+            if (pLetraA.equals("A") || pLetraA.equals("a")) {
+                System.out.println(nome);
+            }
+            
 
 
 
