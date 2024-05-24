@@ -1,5 +1,4 @@
 
-import java.util.Scanner;
 
 
 
@@ -559,30 +558,105 @@ public class EstudandoAlgoritimos {
                 System.out.println(" OUTROS ESTADOS!");
             }*/
 
-            // ATV 16 - ENTRAR COM UM NOME E IMPRIMI-LO SE O PRIMEIRO CARACTERE FOR A LETRA "A" (CONSIDERAR LETRA MINUSCULA OU MAIUSCULA).
+        /*  // ATV 16 - ENTRAR COM UM NOME E IMPRIMI-LO SE O PRIMEIRO CARACTERE FOR A LETRA "A" (CONSIDERAR LETRA MINUSCULA OU MAIUSCULA).
 
             Scanner scanner = new Scanner (System.in);
 
             System.out.print(" DIGITE UM NOME: ");
-            String nome = scanner.next();
+            String nome = scanner.nextLine();
 
             String pLetraA = nome.substring(0,1);
 
             if (pLetraA.equals("A") || pLetraA.equals("a")) {
                 System.out.println(nome);
-            }
+            }*/
             
+        /*  // ATV 17 - ENTRAR COM O NOME DE UMA PESSOA E SÓ IMPRIMI-LO SE O PRENOME FOR JOSÉ.
 
+            Scanner scanner = new Scanner(System.in);
 
+            System.out.print(" DIGITE NOME E SOBRENOME: ");
+            String nome = scanner.nextLine();
 
+            String primeiroNome = nome.substring(0,4);
+            String segundoNome = nome.substring(5);
+            
+            if (primeiroNome.equals("JOSE") || primeiroNome.equals("jose")) {
+                System.out.println(primeiroNome + " " + segundoNome);
+            }*/
+            
+        /*  // ATV 18 - IDEM AO ANTERIOR, POREM CONSIDERAR: JOSE, Jose ou jose.
 
+            Scanner scanner = new Scanner(System.in);
 
+            System.out.print(" DIGITE NOME E SOBRENOME: ");
+            String nome = scanner.nextLine();
 
+            String primeiroNome = nome.substring(0,4);
+            String segundoNome = nome.substring(5);
+            
+            if (primeiroNome.equals("JOSE") || primeiroNome.equals("jose") || primeiroNome.equals("Jose") ) {
+                System.out.println(primeiroNome + " " + segundoNome);
+            }*/
 
+        /*  // ATV 19 - CRIAR UM ALGORITMO QUE LEIA DOIS NUMEROS E IMPRIMIR UMA MENSAGEM DIZENDO SE SÃO IGUAIS OU DIFERENTES.
 
+            Scanner scanner = new Scanner(System.in);
 
+            System.out.print(" DIGITE O PRIMEIRO NUMERO: ");
+            int num1 = scanner.nextInt();
 
+            System.out.print(" DIGITE O SEGUNDO NUMERO: ");
+            int num2 = scanner.nextInt();
 
+            if (num1==num2) {
+                System.out.println(" SÃO IGUAIS! ");
+            }
+            else {
+                System.out.println(" SÃO DIFERENTES! ");
+            }*/
+
+        /*  // ATV 20 - ENTRE COM DOIS NUMEROS E IMPRIMIR O MAIOR NUMERO(SUPONHA NUMEROS DIFERENTES).
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE O PRIMEIRO NUMERO: ");
+            int num1 = scanner.nextInt();
+
+            System.out.print(" DIGITE O SEGUNDO NUMERO: ");
+            int num2 = scanner.nextInt();
+
+            if (num1>num2) {
+                System.out.println(" O PRIMEIRO NUMERO É MAIOR: " + num1);
+            }
+            else {
+                System.out.println(" O SEGUNDO NUMERO É MAIOR: " + num2);
+            }*/
+           
+            // ATV 21 - QUESTÃO 147 DO LIVRO.
+            System.out.println("|-------------------------------|");
+            System.out.println("|             CARDÁPIO          |");
+            System.out.println("|-------------------------------|");
+            System.out.println("|               PRATO           |");
+            System.out.println("| 1 -   VEGETARIANO / 180cal    |");
+            System.out.println("| 2 -    PEIXE  / 230cal        |");
+            System.out.println("| 3 -    FRANGO / 250cal        |");
+            System.out.println("| 4 -    CARNE  / 350cal        |"); 
+            System.out.println("|-------------------------------|");   
+            System.out.println("|             SOBREMESA         |");
+            System.out.println("|-------------------------------|");
+            System.out.println("| 5 -     ABACAXI / 75cal       |");
+            System.out.println("| 6 -     SORVETE / 110cal      |");
+            System.out.println("| 7 -   MOUSSE DIET / 170cal    |");
+            System.out.println("| 8 - MOUSSE CHOCOLATE / 200cal |");
+            System.out.println("|-------------------------------|");   
+            System.out.println("|               BEBIDA          |");
+            System.out.println("|-------------------------------|");
+            System.out.println("| 9 -       CHÁ / 20cal         |");
+            System.out.println("|10 -  SUCO DE LARANJA / 70cal  |");
+            System.out.println("|11 -  SUCO DE MELÃO / 100cal   |");
+            System.out.println("|12 - REFRIGERANTE DIET / 65cal |");
+            System.out.println("|-------------------------------|");
 
     
     
