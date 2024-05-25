@@ -2,6 +2,8 @@
 
 
 
+
+
 public class EstudandoAlgoritimos {
     public static void main(String[] args) throws Exception {
         
@@ -299,7 +301,7 @@ public class EstudandoAlgoritimos {
             System.out.println("\n AREA DO TRIANGULO: " + area );*/
 
     
-            // PARTE 2 -  ESTRUTURAS DE SELEÇÃO
+            // PARTE 2 -  ESTRUTURAS DE SELEÇÃO; IF, ELSE, ELSE IF E SWITH.
 
         /*  // ATV 01 - ENTRAR COM UM NUMERO E IMPRIMI-LO CASO SEJA MAIOR QUE 20.
             
@@ -633,30 +635,48 @@ public class EstudandoAlgoritimos {
                 System.out.println(" O SEGUNDO NUMERO É MAIOR: " + num2);
             }*/
            
-            // ATV 21 - QUESTÃO 147 DO LIVRO.
-            System.out.println("|-------------------------------|");
-            System.out.println("|             CARDÁPIO          |");
-            System.out.println("|-------------------------------|");
-            System.out.println("|               PRATO           |");
-            System.out.println("| 1 -   VEGETARIANO / 180cal    |");
-            System.out.println("| 2 -    PEIXE  / 230cal        |");
-            System.out.println("| 3 -    FRANGO / 250cal        |");
-            System.out.println("| 4 -    CARNE  / 350cal        |"); 
-            System.out.println("|-------------------------------|");   
-            System.out.println("|             SOBREMESA         |");
-            System.out.println("|-------------------------------|");
-            System.out.println("| 5 -     ABACAXI / 75cal       |");
-            System.out.println("| 6 -     SORVETE / 110cal      |");
-            System.out.println("| 7 -   MOUSSE DIET / 170cal    |");
-            System.out.println("| 8 - MOUSSE CHOCOLATE / 200cal |");
-            System.out.println("|-------------------------------|");   
-            System.out.println("|               BEBIDA          |");
-            System.out.println("|-------------------------------|");
-            System.out.println("| 9 -       CHÁ / 20cal         |");
-            System.out.println("|10 -  SUCO DE LARANJA / 70cal  |");
-            System.out.println("|11 -  SUCO DE MELÃO / 100cal   |");
-            System.out.println("|12 - REFRIGERANTE DIET / 65cal |");
-            System.out.println("|-------------------------------|");
+            // PARTE 03 - ESTRUTURA DE REPETIÇÃO: FOR, WHILE E DO WHILE.
+
+        /*  // ATV 01 - IMPRIMIR TODOS OS NUMEROS DE 1 ATÉ 100.
+
+            int a;
+
+            for (a = 1; a<=100; a++) {
+                System.out.println(a);
+            }*/
+
+        /*  // ATV 02 - IMPRIMIR TODOS OS NUMEROS DE 100 ATÉ 1.
+
+            int a;
+
+            for ( a = 100; a >=1 ; a--) {
+                System.out.println(a);
+            }*/
+            
+        /*  // ATV 03 - IMPRIMIR OS 100 PRIMEIROS PARES.
+
+            int a;
+            for (a = 0; a <=200; a++) {
+                System.out.println(a++);
+            }*/
+
+            // ATV 04 - IMPRIMIR OS MULTIPLOS DE 5, NO INTERVALO DE 1 ATÉ 500.
+
+            for (int i = 0; i <=100; i++) {
+                System.out.println(i*5);
+            }
+            
+
+
+
+
+
+
+
+
+
+
+
 
     
     
