@@ -1,7 +1,5 @@
 
-
-
-
+import java.util.Scanner;
 
 
 public class EstudandoAlgoritimos {
@@ -286,7 +284,7 @@ public class EstudandoAlgoritimos {
 
             System.out.println(" DIAGONAL DO PARALELEPIPEDO É: " + Math.sqrt(diag));*/
 
-        /*  // ATV 24 - CRIAR UM ALGORITIMO QUE CALCULE E IMPRIMA A AREA DE UM TRIANGULO.
+        /*  // ATV 24 - CRIAR UM ALGORITMO QUE CALCULE E IMPRIMA A AREA DE UM TRIANGULO.
 
             Scanner scanner = new Scanner(System.in);
 
@@ -667,11 +665,450 @@ public class EstudandoAlgoritimos {
                 System.out.println(a*5);
             }*/
             
-            // ATV 05 - IMPRIMIR O QUADRADO DOS NUMEROS DE 1 ATE 20.
+        /*  // ATV 05 - IMPRIMIR O QUADRADO DOS NUMEROS DE 1 ATE 20.
 
             for (int i = 1; i <=20; i++) {
                 System.out.println(Math.pow(i, 2));
+            }*/
+
+        /*  // ATV 06 - CRIAR UM ALGORITMO QUE IMPRIMA OS NUMEROS PARES NO INTERVALO DE 1 A 600.
+
+            for (int i = 0; i <=600; i++) {
+                System.out.println(i++);
+            }*/
+
+        /*  // ATV 07 - CRIAR UM ALGORITMO QUE IMPRIMA OS NUMEROS DE 120 A 300.
+
+            for ( int i = 120; i<=300;i++){
+                System.out.println(i);
+            }*/
+
+        /*  // ATV 08 - CRIAR UM ALGORITMO QUE IMPRIMA TODOS OS NUMEROS DE 1 A 100 E A SOMA DELES.
+
+            int a;
+            int soma = 0;
+
+            for ( a = 1; a<=100; a++) {
+                System.out.println(a);
+                soma = soma+a;
+                
             }
+            System.out.println(" SOMA DOS NUMEROS: " + soma);*/
+
+        /*  // ATV 09 - ENTRAR COM 10 NUMEROS E IMPRIMIR A METADE DE CADA NUMERO.
+            
+            Scanner scanner = new Scanner(System.in);
+
+            for (int i = 1; i <=10; i++) {
+                System.out.print(i+"- "+" DIGITE UM NUMERO: ");
+                double numero = scanner.nextDouble();
+                System.out.println(" METADE DO NUMERO " +numero+" É: "+numero/2+"\n");
+            }*/
+            
+        /*  // ATV 10 - ENTRAR COM 10 NUMEROS E IMPRIMIR O QUADRADO DE CADA NUMERO.
+
+            Scanner scanner = new Scanner(System.in);
+
+            for (int i = 1; i <=10; i++) {
+                System.out.print(i+"- "+ " DIGITE UM NUMERO: ");
+                double num = scanner.nextDouble();
+
+                System.out.println("    O QUADRADO DESSE NUMERO É: " + Math.pow(num,2)+"\n");
+            }*/
+            
+        /*  // ATV 11 - ENTRAR COM 15 NUMEROS E IMPRIMIR A RAIZ QUADRADA DE CADA NUMERO.
+
+            Scanner scanner = new Scanner(System.in);
+
+            for (int i = 1; i <=15; i++) {
+                System.out.print(i+"- "+ " DIGITE UM NUMERO: ");
+                double num = scanner.nextDouble();
+
+                System.out.println("    A RAIZ QUADRADA DESSE NUMERO É: " + Math.sqrt(num)+"\n");
+            }*/
+
+        /*  // ATV 12 - ENTRAR COM 4 NUMEROS E IMPRIMIR O CUBO E A RAIZ CÚBICA DE CADA NUMERO.
+
+            Scanner scanner =new Scanner(System.in);
+
+            for (int i = 1; i <=4; i++) {
+                System.out.print("\n"+i+"- "+" DIGITE UM NUMERO: ");
+                double num = scanner.nextDouble();
+
+                System.out.print("\n CUBO DO NUMERO "+num+" É: "+Math.pow(num,3)+"\n");
+                System.out.print(" RAIZ CÚBICA DO NUMERO "+num+" É: "+Math.cbrt(num)+"\n");
+            }*/
+
+        /*  // ATV 13 - QUESTÃO 187 DO LIVRO.
+
+            Scanner scanner = new Scanner(System.in);
+
+            for (int i = 1; i <=5; i++) {
+
+                System.out.print("\n"+" DIGITE A BASE: ");
+                int base = scanner.nextInt();
+
+                System.out.print(" DIGITE O EXPOENTE: ");
+                int exp = scanner.nextInt();
+
+                if (exp>1 && base>=2) {
+                    System.out.println(" O RESULTADO É: "+Math.pow(base, exp)+"\n");
+                }
+                else {
+                    System.out.println(" NÃO É COMPATIVEL COM O QUE FOI PEDIDO!");
+                }
+            }*/
+
+        /*  // ATV 14 - QUESTÃO 188 DO LIVRO.
+
+            for (int i = 1; i <=20; i++) {
+
+                System.out.print(" POLEGADAS: "+i);
+                System.out.print(" CENTIMETROS: "+i*2.54+"\n");
+            }*/
+
+        /*  // ATV 15 - QUESTÃO 189 DO LIVRO.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE O LIMITE SUPERIOR: ");
+            int limSup = scanner.nextInt();
+
+            System.out.print(" DIGITE O LIMITE INFERIOR: ");
+            int limInf = scanner.nextInt();
+
+            System.out.print(" DIGITE O DECREMENTO: ");
+            int decre = scanner.nextInt();
+
+            System.out.println("\n LIMITE SUPERIOR: "+limSup+", "+"LIMITE INFERIOR: "+limInf+", "+"DECREMENTO: "+decre+"\n");
+            
+            int celsLimSup = (limSup-32)* 5/9;
+            int celsLimInf = (limInf-32)* 5/9;
+            int celsDecre = (decre-32)* 5/9;
+
+            System.out.print(" FAHRENHEIT: "+limSup + " EM" +" CELSIUS: " + celsLimSup+"\n"); 
+            System.out.print(" FAHRENHEIT: "+limInf + " EM" +" CELSIUS: " + celsLimInf+"\n"); 
+            System.out.print(" FAHRENHEIT: "+decre + " EM" +" CELSIUS: " + celsDecre+"\n");*/
+             
+        /*  // ATV 16 - ENTRAR COM UM NOME, IDADE E SEXO DE 20 PESSOAS. IMPRIMIR O NOME SE A PESSOA FOR DO SEXO MASCULINO E TIVER MAIS DE 21 ANOS.
+          
+            Scanner scanner = new Scanner(System.in);
+
+            for (int i = 1; i <=20; i++) {
+            System.out.print("\n DIGITE SEU NOME: ");
+            String nome = scanner.nextLine();  
+
+            System.out.print(" DIGITE SUA IDADE: ");
+            int idade = scanner.nextInt();
+
+            System.out.print(" DIGITE SEU SEXO: ");
+            String sexo = scanner.next();
+            scanner.nextLine();
+            
+
+            if (sexo.equals("M") || sexo.equals("m") && idade>21) {
+                System.out.println(" VOCE ESTA NOS CONFORMES " + nome + ", PARABÉNS!");
+            }
+            else {
+                System.out.println(" VOCE NÃO ESTA NOS CONFORMES " + nome + ", INFELIZMENTE!");
+            }
+           
+          }*/
+        
+            // ATV 17 - QUESTÃO 191 DO LIVRO.
+            
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE O LIMITE SUPERIOR DO INTERVALO: ");
+            int numSup = scanner.nextInt();
+
+            System.out.print(" DIGITE O INCREMENTO: ");
+            int numIncre = scanner.nextInt();
+
+            for (int i = 0; i <=numSup; i+=numIncre) {
+                System.out.print(" SAÍDA: "+ i);
+                
+            }
+
+
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
