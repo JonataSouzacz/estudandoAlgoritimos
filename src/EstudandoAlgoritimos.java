@@ -660,13 +660,18 @@ public class EstudandoAlgoritimos {
                 System.out.println(a++);
             }*/
 
-            // ATV 04 - IMPRIMIR OS MULTIPLOS DE 5, NO INTERVALO DE 1 ATÉ 500.
-
-            for (int i = 0; i <=100; i++) {
-                System.out.println(i*5);
-            }
+        /*  // ATV 04 - IMPRIMIR OS MULTIPLOS DE 5, NO INTERVALO DE 1 ATÉ 500.
+           
+            int a;
+            for ( a = 0; a <=100; a++) {
+                System.out.println(a*5);
+            }*/
             
+            // ATV 05 - IMPRIMIR O QUADRADO DOS NUMEROS DE 1 ATE 20.
 
+            for (int i = 1; i <=20; i++) {
+                System.out.println(Math.pow(i, 2));
+            }
 
 
 
