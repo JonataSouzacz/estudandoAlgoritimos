@@ -1,5 +1,4 @@
 
-import java.util.Scanner;
 
 
 public class EstudandoAlgoritimos {
@@ -815,7 +814,7 @@ public class EstudandoAlgoritimos {
            
           }*/
         
-            // ATV 17 - QUESTÃO 191 DO LIVRO.
+        /*  // ATV 17 - QUESTÃO 191 DO LIVRO.
             
             Scanner scanner = new Scanner(System.in);
 
@@ -828,11 +827,44 @@ public class EstudandoAlgoritimos {
             for (int i = 0; i <=numSup; i+=numIncre) {
                 System.out.print(" SAÍDA: "+ i);
                 
+            }*/
+
+        /*  // ATV 18 - QUESTÃO 192 DO LIVRO
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO LIMITE: ");
+            int numLimite = scanner.nextInt();
+
+            for (int i = 1; i <= numLimite-1; i+=2) {
+                System.out.println(" SAÍDA: "+i);
+            }*/
+            
+        /*  // ATV 19 - CRIAR UM ALGORITMO QUE LEIA UM NUMERO QUE SERVIRÁ PARA CONTROLAR OS NUMEROS PARES QUE SERÃO IMPRESSOS A PARTIR DE 2.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print( " DIGITE O NUMERO DE PARES QUE DESEJA IMPRIMIR: ");
+            int num = scanner.nextInt();
+            int numVezes = num*2;
+            
+            for (int j = 2; j <=numVezes; j+=2) {
+
+                System.out.println(" SAÍDA: " +j);
+              
+            
+            }*/
+                
+            // ATV 20 - CRIAR UM ALGORITMO QUE IMPRIMA A SOMA DOS NUMEROS PARES ENTRE 25 E 200.
+
+            int soma=0;
+
+            for (int i = 26; i <=198; i+=2) {
+                soma=soma+i;
+                   
             }
-
-
-            
-            
+           
+            System.out.println(soma);
             
             
             
