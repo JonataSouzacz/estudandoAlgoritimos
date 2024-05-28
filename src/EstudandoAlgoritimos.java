@@ -1,4 +1,7 @@
 
+import java.util.Scanner;
+
+
 
 
 public class EstudandoAlgoritimos {
@@ -855,7 +858,7 @@ public class EstudandoAlgoritimos {
             
             }*/
                 
-            // ATV 20 - CRIAR UM ALGORITMO QUE IMPRIMA A SOMA DOS NUMEROS PARES ENTRE 25 E 200.
+        /*  // ATV 20 - CRIAR UM ALGORITMO QUE IMPRIMA A SOMA DOS NUMEROS PARES ENTRE 25 E 200.
 
             int soma=0;
 
@@ -864,9 +867,20 @@ public class EstudandoAlgoritimos {
                    
             }
            
-            System.out.println(soma);
+            System.out.println(soma);*/
             
-            
+            // ATV 21 - ENTRAR COM NUMEROS E IMPRIMIR O TRIPLO DE CADA NUMERO. O ALGORITMO ACABA QUANDO ENTRAR O NUMERO 999.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO OU -999 PARA FINALIZAR: ");
+            int num = scanner.nextInt();
+
+            while (num!=-999) {
+                System.out.println(" TRIPLO: " + num*3);
+                System.out.print(" DIGITE UM NUMERO OU -999 PARA FINALIZAR: ");
+                num = scanner.nextInt();
+            }
             
             
             
