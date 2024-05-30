@@ -869,7 +869,7 @@ public class EstudandoAlgoritimos {
            
             System.out.println(soma);*/
             
-            // ATV 21 - ENTRAR COM NUMEROS E IMPRIMIR O TRIPLO DE CADA NUMERO. O ALGORITMO ACABA QUANDO ENTRAR O NUMERO 999.
+        /*  // ATV 21 - ENTRAR COM NUMEROS E IMPRIMIR O TRIPLO DE CADA NUMERO. O ALGORITMO ACABA QUANDO ENTRAR O NUMERO -999.
 
             Scanner scanner = new Scanner(System.in);
 
@@ -880,10 +880,38 @@ public class EstudandoAlgoritimos {
                 System.out.println(" TRIPLO: " + num*3);
                 System.out.print(" DIGITE UM NUMERO OU -999 PARA FINALIZAR: ");
                 num = scanner.nextInt();
+            }*/
+            
+        /*  FALTA TERMINAR** // ATV 22 - ENTRAR COM NUMEROS ENQUANTO FOREM POSITIVOS E IMPRIMIR QUANTOS NUMEROS FORAM DIGITADOS.
+            
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO POSITIVO OU -999 PARA FINALIZAR: ");
+            int num = scanner.nextInt();
+
+            while (num!=-999) {
+                System.out.println(" TRIPLO: " + num*3);
+                System.out.print(" DIGITE UM NUMERO OU -999 PARA FINALIZAR: ");
+                num = scanner.nextInt();
+            }*/
+            
+            // ATV 23 - ENTRAR COM VÁRIOS NUMEROS POSITIVOS E IMPRIMIR A MEDIA DOS NUMEROS DIGITADOS.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE OS NUMEROS PARA QUE POSSAMOS GERAR A MEDIA: ");
+            int num = scanner.nextInt();
+            int soma=0;    
+            while (num>=0) {
+                
+                System.out.print(" A MEDIA DOS NUMEROS É: " + soma+"\n");
+                soma=soma+num;
+
+                System.out.print(" DIGITE OS NUMEROS PARA QUE POSSAMOS GERAR A MEDIA: ");
+                num = scanner.nextInt();
+                scanner.nextLine();
             }
-            
-            
-            
+
 
 
 
