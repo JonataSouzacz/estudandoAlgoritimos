@@ -882,36 +882,62 @@ public class EstudandoAlgoritimos {
                 num = scanner.nextInt();
             }*/
             
-        /*  FALTA TERMINAR** // ATV 22 - ENTRAR COM NUMEROS ENQUANTO FOREM POSITIVOS E IMPRIMIR QUANTOS NUMEROS FORAM DIGITADOS.
+        /*  // ATV 22 - ENTRAR COM NUMEROS ENQUANTO FOREM POSITIVOS E IMPRIMIR QUANTOS NUMEROS FORAM DIGITADOS.
             
             Scanner scanner = new Scanner(System.in);
 
-            System.out.print(" DIGITE UM NUMERO POSITIVO OU -999 PARA FINALIZAR: ");
+            System.out.print(" DIGITE UM NUMERO: ");
             int num = scanner.nextInt();
 
-            while (num!=-999) {
-                System.out.println(" TRIPLO: " + num*3);
-                System.out.print(" DIGITE UM NUMERO OU -999 PARA FINALIZAR: ");
-                num = scanner.nextInt();
-            }*/
+            int i=0;
             
-            // ATV 23 - ENTRAR COM VÁRIOS NUMEROS POSITIVOS E IMPRIMIR A MEDIA DOS NUMEROS DIGITADOS.
-
-            Scanner scanner = new Scanner(System.in);
-
-            System.out.print(" DIGITE OS NUMEROS PARA QUE POSSAMOS GERAR A MEDIA: ");
-            int num = scanner.nextInt();
-            int soma=0;    
             while (num>=0) {
+                i++;
                 
-                System.out.print(" A MEDIA DOS NUMEROS É: " + soma+"\n");
-                soma=soma+num;
-
-                System.out.print(" DIGITE OS NUMEROS PARA QUE POSSAMOS GERAR A MEDIA: ");
+                System.out.print(" DIGITE UM NUMERO: ");
                 num = scanner.nextInt();
-                scanner.nextLine();
+            }
+            
+            System.out.println(" QUANTIDADE DE NUMEROS DIGITADOS: " + i);*/
+            
+        /*  // ATV 23 - ENTRAR COM VÁRIOS NUMEROS POSITIVOS E IMPRIMIR A MEDIA DOS NUMEROS DIGITADOS.
+
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE NUMERO POSITIVO: ");
+            int num = scanner.nextInt();
+
+            int i=0;
+            int soma = 0;
+
+            while (num>0) {
+                i++;
+                soma = soma+num;
+
+                System.out.print(" DIGITE NUMERO POSITIVO: ");
+                num = scanner.nextInt();
             }
 
+            System.out.println(" A MEDIA DOS NUMEROS DIGITADOS É: " + soma/i);*/
+
+            // ATV 24 - LER VARIOS NUMEROS E INFORMAR QUANTOS NUMEROS DIGITADOS ENTRE 100 E 200 FORAM DIGITADOS. QUANDO O VALOR ZERO FOR LIDO, O ALGORITIMO SE ENCERRA.
+            
+            Scanner scanner = new Scanner(System.in);
+
+            System.out.print(" DIGITE UM NUMERO OU 0 PARA SAIR: ");
+            int num = scanner.nextInt();
+            
+            int numEntre = 0;
+
+
+            while (num>0) {
+                if (num>100 && num<200) {
+                    numEntre++;
+                }
+                System.out.print(" DIGITE UM NUMERO OU 0 PARA SAIR: ");
+                num = scanner.nextInt();
+            }
+            System.out.println(" NUMEROS DIGITADOS ENTRE 100 E 200 FORAM " + numEntre + " VEZES!");
 
 
 
