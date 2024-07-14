@@ -920,7 +920,7 @@ public class EstudandoAlgoritimos {
 
             System.out.println(" A MEDIA DOS NUMEROS DIGITADOS É: " + soma/i);*/
 
-            // ATV 24 - LER VARIOS NUMEROS E INFORMAR QUANTOS NUMEROS DIGITADOS ENTRE 100 E 200 FORAM DIGITADOS. QUANDO O VALOR ZERO FOR LIDO, O ALGORITIMO SE ENCERRA.
+        /*  // ATV 24 - LER VARIOS NUMEROS E INFORMAR QUANTOS NUMEROS DIGITADOS ENTRE 100 E 200 FORAM DIGITADOS. QUANDO O VALOR ZERO FOR LIDO, O ALGORITIMO SE ENCERRA.
             
             Scanner scanner = new Scanner(System.in);
 
@@ -928,8 +928,7 @@ public class EstudandoAlgoritimos {
             int num = scanner.nextInt();
             
             int numEntre = 0;
-
-
+            
             while (num>0) {
                 if (num>100 && num<200) {
                     numEntre++;
@@ -937,17 +936,75 @@ public class EstudandoAlgoritimos {
                 System.out.print(" DIGITE UM NUMERO OU 0 PARA SAIR: ");
                 num = scanner.nextInt();
             }
-            System.out.println(" NUMEROS DIGITADOS ENTRE 100 E 200 FORAM " + numEntre + " VEZES!");
+            System.out.println(" NUMEROS DIGITADOS ENTRE 100 E 200 FORAM " + numEntre + " VEZES!");*/
 
+        /*  // ATV 25 - ENTRAR COM NOMES ENQUANTO FOREM DIFERENTES DE FIM E IMPRIMIR O PRIMEIRO CARACTERE DE CADA NOME.
 
+            Scanner scanner = new Scanner(System.in);
 
+            System.out.print(" DIGITE UM NOME OU FIM PARA ENCERRAR: ");
+            String nome = scanner.nextLine();
+            String nomeFim = "FIM";
+            
+            
+            while (!nome.equalsIgnoreCase(nomeFim)) {
+                System.out.println(" PRIMEIRA LETRA DO NOME DIGITADO: " + nome.substring(0,1));
+                
+                System.out.print(" DIGITE UM NOME OU FIM PARA ENCERRAR: ");
+                nome = scanner.nextLine();
+                nomeFim = "FIM";   
+            }*/
+            
+        /*  // ATV 26 - ENTRAR COM PROFISSÃO DE VARIAS PESSOAS E IMPRIMIR QUANTOS SÃO DENTISTAS, CONSIDERANDO (DENTISTAS, Dentistas e dentistas).
 
+            Scanner scanner = new Scanner(System.in);
 
+            System.out.print(" DIGITE SUA PROFISSÃO OU FIM PARA ENCERRAR: ");
+            String prof = scanner.nextLine();
+            int i=0;
 
+            while (!prof.equalsIgnoreCase("FIM")) {
+                
+                if (prof.equalsIgnoreCase("DENTISTA")){
+                    i++;
+                }
+                System.out.print(" DIGITE SUA PROFISSÃO OU FIM PARA ENCERRAR: ");
+                prof = scanner.nextLine();   
+            }
+                System.out.println(" FORAM " + i + " DENTISTAS!");*/
 
+        /*  // ATV 27 - ENTRAR COM SEXO DE VARIAS PESSOAS E IMPRIMIR QUANTAS SÃO MASCULINO, CONSIDERANDO (M OU m).
 
+            Scanner scanner = new Scanner(System.in);
 
+            System.out.print(" DIGITE SEU SEXO OU FIM PARA ENCERRAR: ");
+            String sexo = scanner.nextLine();
+            int i=0;
 
+            while (!sexo.equalsIgnoreCase("FIM")) {
+                
+                if (sexo.equalsIgnoreCase("M")){
+                    i++;
+                }
+                System.out.print(" DIGITE SEU SEXO OU FIM PARA ENCERRAR: ");
+                sexo = scanner.nextLine();   
+            }
+                System.out.println(" FORAM " + i + " DO SEXO MASCULINO!");*/
+  
+            // ATV 28 - ENTRAR COM NUMEROS E IMPRIMIR O QUADRADO DE CADA NUMERO ATE ENTRAR UM NUMERO MULTIPLO DE 6 QUE DEVERÁ TER SEU QUADRADO TAMBEM IMPRESSO.
+
+            Scanner scanner = new Scanner(System.in);
+
+            //System.out.print(" DIGITE UM NUMERO OU MULTIPLO DE 6 PARA ENCERRAR: ");
+            int num;
+
+            do { 
+                System.out.print(" DIGITE UM NUMERO OU MULTIPLO DE 6 PARA ENCERRAR: ");
+                num = scanner.nextInt();
+                
+                System.out.println(" QUADRADO: " + num*num);
+
+            } while (num%6!=0);
 
 
 
