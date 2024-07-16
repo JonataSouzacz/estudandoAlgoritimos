@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 
 
+
 public class EstudandoAlgoritimos {
     public static void main(String[] args) throws Exception {
         
@@ -991,11 +992,10 @@ public class EstudandoAlgoritimos {
             }
                 System.out.println(" FORAM " + i + " DO SEXO MASCULINO!");*/
   
-            // ATV 28 - ENTRAR COM NUMEROS E IMPRIMIR O QUADRADO DE CADA NUMERO ATE ENTRAR UM NUMERO MULTIPLO DE 6 QUE DEVERÁ TER SEU QUADRADO TAMBEM IMPRESSO.
+        /*  // ATV 28 - ENTRAR COM NUMEROS E IMPRIMIR O QUADRADO DE CADA NUMERO ATE ENTRAR UM NUMERO MULTIPLO DE 6 QUE DEVERÁ TER SEU QUADRADO TAMBEM IMPRESSO.
 
             Scanner scanner = new Scanner(System.in);
 
-            //System.out.print(" DIGITE UM NUMERO OU MULTIPLO DE 6 PARA ENCERRAR: ");
             int num;
 
             do { 
@@ -1004,9 +1004,50 @@ public class EstudandoAlgoritimos {
                 
                 System.out.println(" QUADRADO: " + num*num);
 
-            } while (num%6!=0);
+            } while (num%6!=0);*/
+
+            // PARTE 04 - ESTRUTURAS HOMOGENEAS: VETORES E MATRIZES.
+
+            // ATV 01 - CRIAR UM ALGORITMO QUE ARMAZENE NOME E DUAS NOTAS DE CINCO ALUNOS E IMPRIMA UMA LISTAGEM CONTENDO NOME, AS DUAS NOTAS E A MEDIA DE CADA ALUNO.
+
+            Scanner scanner = new Scanner(System.in);
+
+            String nomes[] = new String[5];
+            double n01[] = new double [5];
+            double n02[] = new double[5]; 
+            double med[] = new double[5];
 
 
+            for (int i = 0; i <5; i++) {
+                
+                System.out.print(" DIGITE SEU NOME: ");
+                nomes[i] = scanner.nextLine();
+            
+                System.out.print(" DIGITE SUA PRIMEIRA NOTA: ");
+                n01[i] = scanner.nextDouble();
+
+                System.out.print(" DIGITE SUA SEGUNDA NOTA: ");
+                n02[i] = scanner.nextDouble();
+                scanner.nextLine();
+
+                System.out.println("");
+
+                med[i] = ((n01[i] + n02[i])/2);
+                
+                
+
+            }
+
+            for (int i = 0; i <5; i++) {
+                System.out.println(" NOME: " + nomes[i]);
+                System.out.println(" PRIMEIRA NOTA: " + n01[i]);
+                System.out.println(" SEGUNDA NOTA: " + n02[i]);
+                System.out.println(" SUA MEDIA: " + med[i]);
+                System.out.println(" ");
+            }
+
+                
+            }
 
 
 
@@ -1285,4 +1326,4 @@ public class EstudandoAlgoritimos {
     
     
         }
-}
+
