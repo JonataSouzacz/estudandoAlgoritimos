@@ -1008,7 +1008,7 @@ public class EstudandoAlgoritimos {
 
             // PARTE 04 - ESTRUTURAS HOMOGENEAS: VETORES E MATRIZES.
 
-            // ATV 01 - CRIAR UM ALGORITMO QUE ARMAZENE NOME E DUAS NOTAS DE CINCO ALUNOS E IMPRIMA UMA LISTAGEM CONTENDO NOME, AS DUAS NOTAS E A MEDIA DE CADA ALUNO.
+        /*  // ATV 01 - CRIAR UM ALGORITMO QUE ARMAZENE NOME E DUAS NOTAS DE CINCO ALUNOS E IMPRIMA UMA LISTAGEM CONTENDO NOME, AS DUAS NOTAS E A MEDIA DE CADA ALUNO.
 
             Scanner scanner = new Scanner(System.in);
 
@@ -1044,14 +1044,64 @@ public class EstudandoAlgoritimos {
                 System.out.println(" SEGUNDA NOTA: " + n02[i]);
                 System.out.println(" SUA MEDIA: " + med[i]);
                 System.out.println(" ");
+            }*/
+
+        /*  // ATV 02 - CRIAR UM ALGORITMO QUE ARMAZENE NUMEROS EM DOIS VETORES INTEIROS DE CINCO ELEMENTOS CADA. GERE E IMPRIMA O VETOR SOMA.
+            
+            Scanner scanner = new Scanner(System.in);
+
+            int vetor01[] = new int[5]; 
+            int vetor02[] = new int[5];
+            int vetorSoma[] = new int[5];
+
+            for (int i = 0; i <5; i++) {
+                System.out.print(" DIGITE O PRIMEIRO NUMERO: ");
+                vetor01[i] = scanner.nextInt();
+
+                System.out.print(" DIGITE O SEGUNDO NUMERO: ");
+                vetor02[i] = scanner.nextInt();
+                scanner.nextLine();
+
+                vetorSoma[i] = vetor01[i] + vetor02[i];
+                System.out.println("");
             }
 
+            for (int i = 0; i <=4; i++) {
+                System.out.println(" SOMA [" + i +"]: " + vetorSoma[i]);
+                
+            }*/
+
+            // ATV 03 - CRIAR UM ALGORITMO QUE ARMAZENE 5 NOMES EM UM VETOR E DEPOIS POSSA SER DIGITADO UM NUMERO QUE CORRESPONDE A UMA PESSOA E IMPRIMIR ESSE NOME.
+
+            Scanner scanner = new Scanner(System.in);
+
+            String nomes[] = new String[5];
+            
+            for (int i = 0; i <5; i++) {
+                System.out.print(" DIGITE O NOME DA POSIÇÃO "+(i+1)+": ");
+                nomes[i] = scanner.nextLine();
                 
             }
+            
+            System.out.println(" ");
+            System.out.println(" NOMES DA LISTA: ");
+            System.out.println(" ");
 
+            for (int i = 0; i <5; i++) {
+                System.out.println(" "+(i+1)+" - " + nomes[i]);
+            }
 
+            System.out.println(" ");
+            System.out.print(" DIGITE UM NUMERO DE 1 A 5 PARA SELECIONAR O PERSONAGEM: ");
+            int num = scanner.nextInt();
+            System.out.println(" ");
+            System.out.println(" PERSONAGEM SELECIONADO: " + nomes[num]);
 
+            
+            
+            
 
+            
 
 
 
@@ -1074,254 +1124,7 @@ public class EstudandoAlgoritimos {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-    
-    
+            }
     
     
     
