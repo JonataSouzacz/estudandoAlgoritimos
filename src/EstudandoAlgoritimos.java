@@ -1139,7 +1139,7 @@ public class EstudandoAlgoritimos {
                
             }*/
 
-            // ATV 06 - ARMAZENAR 8 NUMEROS EM UM VETOR E IMPRIMIR TODOS OS NUMEROS. AO FINAL, TEREMOS O TOTAL DE NUMEROS MULTIPLOS DE SEIS DIGITADOS.
+        /*  // ATV 06 - ARMAZENAR 8 NUMEROS EM UM VETOR E IMPRIMIR TODOS OS NUMEROS. AO FINAL, TEREMOS O TOTAL DE NUMEROS MULTIPLOS DE SEIS DIGITADOS.
 
             Scanner scanner = new Scanner(System.in);
 
@@ -1164,8 +1164,101 @@ public class EstudandoAlgoritimos {
                     System.out.println(" " + num[i]);
                 }
             }
-            System.out.println(" ");
+            System.out.println(" ");*/
 
+        /*  // ATV 07 - QUESTÃO 356 DO LIVRO.
+
+            Scanner scanner = new Scanner(System.in);
+            
+            String nomeAluno[] = new String[6];
+            
+            double nota1[] = new double[6];
+            double nota2[] = new double[6];
+            double media[] = new double[6];
+            String situAluno [] = new String[6];
+
+            for (int i = 0; i <6; i++) {
+                System.out.print("\n DIGITE SEU NOME: ");
+                nomeAluno[i] = scanner.nextLine();
+
+                System.out.print(" DIGITE SUA PRIMEIRA NOTA: ");
+                nota1[i] = scanner.nextDouble();
+
+                System.out.print(" DIGITE SUA SEGUNDA NOTA: ");
+                nota2[i] = scanner.nextDouble();
+
+                scanner.nextLine();
+
+                media[i] = ((nota1[i]+nota2[i])/2);
+                media[i] = Math.ceil(media[i]); // MATH.CEIL FAZ O ARREDONDAMENTO PARA CIMA.
+
+                        if (media[i]>=7) {
+                             situAluno[i] = "APROVADO, PARABENS, VOCE ESTA DE FERIAS!";
+                        }else{
+                            situAluno[i] = "REPROVADO, PRECISA SE DEDICAR MAIS, VOCE EST NA FINAL! ";
+                        }
+            }
+
+            System.out.println("\n LISTA DOS ALUNOS ");
+
+            for (int i = 0; i <6; i++) {
+                System.out.println("\n NOME DO ALUNO: " + nomeAluno[i]);
+                System.out.println(" PRIMEIRA NOTA: " + nota1[i]);
+                System.out.println(" SEGUNDA NOTA: " + nota2[i]);
+                System.out.println(" MEDIA ARREDONDADA: " + media[i]);
+                System.out.println(" SITUAÇÃO DO ALUNO: " + situAluno[i] + "\n");
+            }*/
+
+        /*  // ATV 07 - QUESTÃO 357 DO LIVRO.
+            
+            Scanner scanner = new Scanner(System.in);
+
+            String nome[] = new String[5];
+            double salario[] = new double[5];
+            double novoSalario[] = new double[5];
+
+            for (int i = 0; i <5; i++) {
+                System.out.print("\n DIGITE SEU NOME: ");
+                nome[i] = scanner.nextLine();
+
+                System.out.print(" DIGITE SEU SALARIO ATUAL: ");
+                salario[i] = scanner.nextDouble();
+
+                scanner.nextLine();
+
+                double reajusteSala = (salario[i]*(8.0/100));
+                novoSalario[i] = (salario[i]+reajusteSala);
+                
+            }
+
+            System.out.println("\n TABELA DE REAJUSTE DO SALARIO DOS FUNCIONARIOS ");
+
+            for (int i = 0; i <5; i++) {
+                System.out.println("\n FUNCIONARIO: " + nome[i]);
+                System.out.println(" SALARIO ANTERIOR: " + salario[i]);
+                System.out.println(" SALARIO ATUAL COM REAJUSTE DE 8%: " + novoSalario[i] + "\n");
+            }*/
+
+            // ATV 08 - QUESTÃO 358 DO LIVRO.
+
+            Scanner scanner = new Scanner(System.in);
+
+            String produtos[] = {"CARNE","ARROZ","FEIJAO","CUSCUZ","OVO"};
+
+            double precoCompra[] = new double[5];
+            double precoVenda[] = new double[5];
+
+            for (int i = 0; i <5; i++) {
+                System.out.print("\n DIGITE O PREÇO DE COMPRA DO PRODUTO " + produtos[i] + ": ");
+                precoCompra[i] = scanner.nextDouble();
+
+                System.out.print(" DIGITE O PREÇO DE VENDA DO PRODUTO " + produtos[i] + ": ");
+                precoVenda[i] = scanner.nextDouble();
+
+                scanner.nextLine();
+                
+            }
+            
 
 
 
