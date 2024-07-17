@@ -1071,20 +1071,20 @@ public class EstudandoAlgoritimos {
                 
             }*/
 
-            // ATV 03 - CRIAR UM ALGORITMO QUE ARMAZENE 5 NOMES EM UM VETOR E DEPOIS POSSA SER DIGITADO UM NUMERO QUE CORRESPONDE A UMA PESSOA E IMPRIMIR ESSE NOME.
+        /*  // ATV 03 - CRIAR UM ALGORITMO QUE ARMAZENE 5 NOMES EM UM VETOR E DEPOIS POSSA SER DIGITADO UM NUMERO QUE CORRESPONDE A UMA PESSOA E IMPRIMIR ESSE NOME.
 
             Scanner scanner = new Scanner(System.in);
 
             String nomes[] = new String[5];
             
             for (int i = 0; i <5; i++) {
-                System.out.print(" DIGITE O NOME DA POSIÇÃO "+(i+1)+": ");
+                System.out.print(" DIGITE O NOME DO PERSONAGEN "+(i+1)+": ");
                 nomes[i] = scanner.nextLine();
                 
             }
             
             System.out.println(" ");
-            System.out.println(" NOMES DA LISTA: ");
+            System.out.println(" NOME DOS PERSONAGENS: ");
             System.out.println(" ");
 
             for (int i = 0; i <5; i++) {
@@ -1095,18 +1095,76 @@ public class EstudandoAlgoritimos {
             System.out.print(" DIGITE UM NUMERO DE 1 A 5 PARA SELECIONAR O PERSONAGEM: ");
             int num = scanner.nextInt();
             System.out.println(" ");
-            System.out.println(" PERSONAGEM SELECIONADO: " + nomes[num]);
+            System.out.println(" PERSONAGEM SELECIONADO: " + nomes[num-1]);*/
 
+        /*  // ATV 04 - ARMAZENAR 10 NOMES EM UM VETOR "NOME" E IMPRIMIR UMA LISTAGEM NUMERADA.
+ 
+            Scanner scanner = new Scanner(System.in);
+
+            String nomes[] = new String[10];
             
+            for (int i = 0; i <10; i++) {
+                System.out.print(" DIGITE UM NOME: ");
+                nomes[i] = scanner.nextLine();
+            }
+            System.out.println("\n LISTAGEM NUMERADA ");
+            System.out.println(" ");
+
+            for (int i = 0; i <10; i++) {
+                System.out.println(" " + (i+1) + " - " + nomes[i]);
+            }*/
             
+        /*  // ATV 05 - ARMAZENAR 15 NUMEROS INTEIROS EM UM VETOR "NUM" E IMPRIMIR UMA LISTAGEM NUMERADA CONTENDO O NUMERO E UMA DAS MENSAGENS: PAR OU IMPAR.  
             
+            Scanner scanner = new Scanner(System.in);
 
+            int numeros[] = new int[15];
+
+            for (int i = 0; i <15; i++) {
+                System.out.print(" DIGITE UM NUMERO: ");
+                numeros[i] = scanner.nextInt();
+
+            }
+
+            System.out.println("\n LISTAGEM DOS NUMEROS DIGITADOS COM MSG DE PAR OU IMPAR: ");
+            System.out.println(" ");
             
+            for (int i = 0; i <15; i++) {
+                if (numeros[i]%2==0) {
+                    System.out.println((" " + (i+1) + " - " + numeros[i]) + ": PAR! ");
+                }
+                else {
+                    System.out.println((" " + (i+1) + " - " + numeros[i]) + ": IMPAR! ");
+                }
+               
+            }*/
 
+            // ATV 06 - ARMAZENAR 8 NUMEROS EM UM VETOR E IMPRIMIR TODOS OS NUMEROS. AO FINAL, TEREMOS O TOTAL DE NUMEROS MULTIPLOS DE SEIS DIGITADOS.
 
+            Scanner scanner = new Scanner(System.in);
 
+            String numList [] = {"PRIMEIRO","SEGUNDO","TERCEIRO","QUARTO","QUINTO","SEXTO","SETIMO","OITAVO"};
+            int num[] = new int[8];
 
+            for (int i = 0; i <8; i++) {
+                System.out.print((" DIGITE O " + numList[i]) + " NUMERO: ");
+                num[i] = scanner.nextInt();
+            }
 
+            System.out.println("\n LISTA COM OS 8 NUMEROS DIGITADOS ");
+
+            for (int i = 0; i <8; i++) {
+                System.out.println(" " + numList[i] + " NUMERO DIGITADO: " + num[i]);
+            }
+
+            System.out.println("\n LISTA DOS NUMEROS MUTIPLOS DE SEIS DA LISTA DOS 8 NUMEROS DIGITADOS \n");
+
+            for (int i = 0; i <8; i++) {
+                if (num[i]%2==0 && num[i]%3==0) {
+                    System.out.println(" " + num[i]);
+                }
+            }
+            System.out.println(" ");
 
 
 
