@@ -1243,10 +1243,14 @@ public class EstudandoAlgoritimos {
 
             Scanner scanner = new Scanner(System.in);
 
-            String produtos[] = {"CARNE","ARROZ","FEIJAO","CUSCUZ","OVO"};
+            String produtos[] = {"CARNE","ARROZ","FEIJAO","CUSCUZ","MACARRAO"};
 
             double precoCompra[] = new double[5];
             double precoVenda[] = new double[5];
+            
+            int lucroMenos10=0;
+            int lucroMais10=0;
+            int lucroMais20=0;
 
             for (int i = 0; i <5; i++) {
                 System.out.print("\n DIGITE O PREÇO DE COMPRA DO PRODUTO " + produtos[i] + ": ");
@@ -1256,22 +1260,29 @@ public class EstudandoAlgoritimos {
                 precoVenda[i] = scanner.nextDouble();
 
                 scanner.nextLine();
-                
+
+                double porcentProd = ((precoVenda[i] - precoCompra[i]) / precoCompra[i]);
+                double porcentLucro = porcentProd * 100;
+
+                if (porcentLucro<10) {
+                    System.out.println(" LUCRO DO PRODUTO " + produtos[i] + " FOI DE: " + porcentLucro + "%");
+                    lucroMenos10++;  
+                }
+                else if (porcentLucro >=10 && porcentLucro <20) {
+                    System.out.println(" LUCRO DO PRODUTO " + produtos[i] + " FOI DE: " + porcentLucro + "%");
+                    lucroMais10++; 
+                }
+                else if (porcentLucro >=20) {
+                    System.out.println(" LUCRO DO PRODUTO " + produtos[i] + " FOI DE: " + porcentLucro + "%");
+                    lucroMais20++;
+                }
+
             }
             
-
-
-
-
-
-
-
-
-
-
-
-
-
+            System.out.println("\n LISTA DA QUANTIDADE DE PRODUTOS COM MENOS 10% DE LUCRO, 10% A 19% DE LUCRO E 20% OU MAIS DE LUCRO. ");
+            System.out.println("\n LUCRO -10%: " + lucroMenos10);
+            System.out.println(" LUCRO 10% a 19%: " + lucroMais10);
+            System.out.println(" LUCRO 20% a +20%: " + lucroMais20);
 
 
 
