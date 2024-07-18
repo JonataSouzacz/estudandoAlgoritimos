@@ -1209,7 +1209,7 @@ public class EstudandoAlgoritimos {
                 System.out.println(" SITUAÇÃO DO ALUNO: " + situAluno[i] + "\n");
             }*/
 
-        /*  // ATV 07 - QUESTÃO 357 DO LIVRO.
+        /*  // ATV 08 - QUESTÃO 357 DO LIVRO.
             
             Scanner scanner = new Scanner(System.in);
 
@@ -1239,7 +1239,7 @@ public class EstudandoAlgoritimos {
                 System.out.println(" SALARIO ATUAL COM REAJUSTE DE 8%: " + novoSalario[i] + "\n");
             }*/
 
-            // ATV 08 - QUESTÃO 358 DO LIVRO.
+        /*  // ATV 09 - QUESTÃO 358 DO LIVRO.
 
             Scanner scanner = new Scanner(System.in);
 
@@ -1282,13 +1282,82 @@ public class EstudandoAlgoritimos {
             System.out.println("\n LISTA DA QUANTIDADE DE PRODUTOS COM MENOS 10% DE LUCRO, 10% A 19% DE LUCRO E 20% OU MAIS DE LUCRO. ");
             System.out.println("\n LUCRO -10%: " + lucroMenos10);
             System.out.println(" LUCRO 10% a 19%: " + lucroMais10);
-            System.out.println(" LUCRO 20% a +20%: " + lucroMais20);
+            System.out.println(" LUCRO 20% a +20%: " + lucroMais20);*/
 
+            // ATV 10 - QUESTÃO 359 DO LIVRO.
 
+            Scanner scanner = new Scanner(System.in);
+
+            String nome[] = new String[5];
+            int idade[] = new int[5];
+
+            String nomes[] = new String[5];
+
+            for (int i = 0; i <5; i++) {
+                System.out.print("\n DIGETE SEU NOME: ");
+                nome[i] = scanner.nextLine();
+
+                System.out.print(" DIGITE SUA IDADE: ");
+                idade[i] = scanner.nextInt();
+
+                scanner.nextLine();
+
+                String letraInicial = nome[i].substring(0, 1);
+
+                if (letraInicial.equals("M")|| letraInicial.equals("m")||
+                   letraInicial.equals("N")|| letraInicial.equals("n")||
+                   letraInicial.equals("O")|| letraInicial.equals("o")|| 
+                   letraInicial.equals("P")|| letraInicial.equals("p")|| 
+                   letraInicial.equals("Q")|| letraInicial.equals("q")|| 
+                   letraInicial.equals("R")|| letraInicial.equals("r")) {
+
+                    nomes[i] = nome[i];
+                    
+                }
 
             }
-    
-    
-    
+             
+            System.out.println("\n LISTA COM OS NOMES QUE INICIA COM A LETRA M, N, O, P, Q E R. \n");
+            for (int i = 0; i <5; i++) {
+                if (nomes[i]!= null) {
+                    System.out.println(" " + nomes[i]);
+                }
+               
+            }
+            
+           
+            
+            
+
+
+
         }
+
+            
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            
+        
+    
+    
+        
 
