@@ -1,4 +1,5 @@
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -1284,7 +1285,7 @@ public class EstudandoAlgoritimos {
             System.out.println(" LUCRO 10% a 19%: " + lucroMais10);
             System.out.println(" LUCRO 20% a +20%: " + lucroMais20);*/
 
-            // ATV 10 - QUESTÃO 359 DO LIVRO.
+        /*  // ATV 10 - QUESTÃO 359 DO LIVRO.
 
             Scanner scanner = new Scanner(System.in);
 
@@ -1323,11 +1324,120 @@ public class EstudandoAlgoritimos {
                     System.out.println(" " + nomes[i]);
                 }
                
+            }*/
+            
+           // ATV 11 - QUESTÃO 361 DO LIVRO.
+
+           ArrayList <String> codigosProdutos = new ArrayList<>(); 
+           ArrayList <Integer> quantProdutos = new ArrayList<>();
+           ArrayList <String> nomeProdutos = new ArrayList<>(); 
+           ArrayList <Double> valorCompra = new ArrayList<>();  
+           ArrayList <Double> valorVenda = new ArrayList<>();
+
+           Scanner scanner = new Scanner(System.in);
+
+           String escolha;
+
+           do { System.out.print("\n DIGITE O CODIGO DO PRODUTO: ");
+                String codigo = scanner.nextLine();
+                codigosProdutos.add(codigo);
+
+                System.out.println(" CODIGO SALVO!");
+
+                System.out.print("\n DIGITE O NOME DO PRODUTO: ");
+                String nome = scanner.nextLine();
+                nomeProdutos.add(nome);
+
+                System.out.println(" NOME DO PRODUTO SALVO!");
+
+                System.out.print("\n DIGITE A QUANTIDADE DE COMPRA DO PRODUTO: ");
+                int quantidade = scanner.nextInt();
+                quantProdutos.add(quantidade);
+
+                System.out.println(" QUANTIDADE DO PRODUTO SALVO!");
+
+                System.out.print("\n DIGITE O VALOR DE COMPRA DO PRODUTO: ");
+                double valorC = scanner.nextDouble();
+                valorCompra.add(valorC);
+
+                System.out.println(" VALOR DE COMPRA DO PRODUTO SALVO! ");
+
+                System.out.print("\n DIGITE O VALOR DE VENDA DO PRODUTO: ");
+                double valorV = scanner.nextDouble();
+                valorVenda.add(valorV);
+
+                System.out.println(" VALOR DE VENDA DO PRODUTO SALVO!");
+
+                System.out.print("\n DESEJA CADASTRAR UM NOVO PRODUTO? DIGITE S/N: ");
+                scanner.nextLine();
+                
+                escolha = scanner.nextLine();
+
+                
+            } while (escolha.equalsIgnoreCase("S")); 
+
+            System.out.println("\n CADASTRO DE PRODUTOS ENCERRADO!\n");
+
+            System.out.print(" DESEJA PESQUISAR ALGUM PRODUTO CADASTRADO PELO CODIGO? DIGITE S/N: ");
+            escolha = scanner.next();
+
+
+           if (escolha.equalsIgnoreCase("S")) {
+                System.out.print("\n DIGITE O CODIGO DO PRODUTO: \n");
+                scanner.nextLine();
+                String escCodigo = scanner.nextLine();
+
+                for (int i = 0; i < codigosProdutos.size(); i++) {
+                    if (escCodigo.equals(codigosProdutos.get(i)) ) {
+                        System.out.println(" NOME: " + nomeProdutos.get(i));
+                        System.out.println(" QUANTIDADE: " + quantProdutos.get(i));
+                        System.out.println(" VALOR DE COMPRA: " + valorCompra.get(i));
+                        System.out.println(" VALOR DE VENDA: " + valorVenda.get(i));
+                        System.out.println();
+                    }
+                }
+            }else if (escolha.equalsIgnoreCase("N")) {
+            System.out.println( "\n LISTA DOS PRODUTOS CADASTRADOS:  \n");
+
+            for (int i = 0; i < codigosProdutos.size(); i++) {
+             System.out.println(" CODIGO: " + codigosProdutos.get(i));
+             System.out.println(" NOME: " + nomeProdutos.get(i));
+             System.out.println(" QUANTIDADE: " + quantProdutos.get(i));
+             System.out.println(" VALOR DE COMPRA: " + valorCompra.get(i));
+             System.out.println(" VALOR DE VENDA: " + valorVenda.get(i));
+             System.out.println();
             }
-            
+
+            }else {
+                System.out.println(" PESQUISA DE PRODUTO ENCERRADO!");
+            }
+
+
+
            
-            
-            
+           
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
