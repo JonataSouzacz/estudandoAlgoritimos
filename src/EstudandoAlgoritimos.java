@@ -1,5 +1,4 @@
 
-import java.util.Scanner;
 
 
 
@@ -1435,7 +1434,7 @@ public class EstudandoAlgoritimos {
               
             }*/
 
-            // ATV 13 - CRIAR UM ALGORITMO QUE LEIA OS ELEMENTOS DE UMA MATRIZ INTEIRA 5X5 E ESCREVA TODOS OS ELEMENTOS, EXCETO OS ELEMENTOS DA DIAGONAL PRINCIPAL.
+        /*  // ATV 13 - CRIAR UM ALGORITMO QUE LEIA OS ELEMENTOS DE UMA MATRIZ INTEIRA 5X5 E ESCREVA TODOS OS ELEMENTOS, EXCETO OS ELEMENTOS DA DIAGONAL PRINCIPAL.
            
             Scanner leia = new Scanner(System.in);
 
@@ -1465,32 +1464,9 @@ public class EstudandoAlgoritimos {
                 for (int c = 0; c < l; c++) {
                     System.out.println(" " + matriz[l][c]);
                 }         
-            }
+            }*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            
         }
 
             
@@ -1498,8 +1474,7 @@ public class EstudandoAlgoritimos {
 
 
 
-
-
+    
 
 
 
