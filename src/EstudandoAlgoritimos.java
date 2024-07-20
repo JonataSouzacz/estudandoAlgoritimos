@@ -1,5 +1,4 @@
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 
@@ -1326,7 +1325,7 @@ public class EstudandoAlgoritimos {
                
             }*/
             
-           // ATV 11 - QUESTÃO 361 DO LIVRO.
+        /* // ATV 11 - QUESTÃO 361 DO LIVRO.  "UTILIZEI ARRAYLIST"
 
            ArrayList <String> codigosProdutos = new ArrayList<>(); 
            ArrayList <Integer> quantProdutos = new ArrayList<>();
@@ -1383,13 +1382,13 @@ public class EstudandoAlgoritimos {
 
 
            if (escolha.equalsIgnoreCase("S")) {
-                System.out.print("\n DIGITE O CODIGO DO PRODUTO: \n");
+                System.out.print("\n DIGITE O CODIGO DO PRODUTO: ");
                 scanner.nextLine();
                 String escCodigo = scanner.nextLine();
 
                 for (int i = 0; i < codigosProdutos.size(); i++) {
                     if (escCodigo.equals(codigosProdutos.get(i)) ) {
-                        System.out.println(" NOME: " + nomeProdutos.get(i));
+                        System.out.println("\n NOME: " + nomeProdutos.get(i));
                         System.out.println(" QUANTIDADE: " + quantProdutos.get(i));
                         System.out.println(" VALOR DE COMPRA: " + valorCompra.get(i));
                         System.out.println(" VALOR DE VENDA: " + valorVenda.get(i));
@@ -1410,12 +1409,63 @@ public class EstudandoAlgoritimos {
 
             }else {
                 System.out.println(" PESQUISA DE PRODUTO ENCERRADO!");
+            }*/
+
+        /*  // ATV 12 - CRIAR UM ALGORITMO QUE LEIA OS ELEMENTOS DE UMA MATRIZ INTEIRA 3X3 E ESCREVA OS ELEMENTOS DA DIAGONAL PRINCIPAL.
+
+            Scanner leia = new Scanner(System.in);
+
+
+            int[][] matriz = new int[3][3];
+
+            for (int l = 0; l < matriz.length; l++) {
+                for (int c = 0; c < matriz[l].length; c++) {
+                    System.out.print("DIGITE UM NUMERO PARA PREENCHER A MATRIZ 3X3: ");
+                    matriz[l][c] = leia.nextInt();
+                    leia.nextLine();
+                }
+                
             }
 
+            System.out.println("\n DIAGONAL DA MATRIZ:");
+
+            for (int l = 0; l < matriz.length; l++) {
+                                
+                System.out.println(" " + matriz[l][l]);
+              
+            }*/
+
+            // ATV 13 - CRIAR UM ALGORITMO QUE LEIA OS ELEMENTOS DE UMA MATRIZ INTEIRA 5X5 E ESCREVA TODOS OS ELEMENTOS, EXCETO OS ELEMENTOS DA DIAGONAL PRINCIPAL.
+           
+            Scanner leia = new Scanner(System.in);
 
 
-           
-           
+            int[][] matriz = new int[5][5];
+
+            for (int l = 0; l < matriz.length; l++) {
+                for (int c = 0; c < matriz[l].length; c++) {
+                    System.out.print("DIGITE UM NUMERO PARA PREENCHER A MATRIZ 5X5: ");
+                    matriz[l][c] = leia.nextInt();
+                    leia.nextLine();
+                }
+                
+            }
+
+            System.out.println("\n TRIANGULO SUPERIOR E INFERIOR DA DIAGONAL PRINCIPAL:");
+
+            for (int l = 0; l < matriz.length; l++) {
+                for (int c = l+1; c < matriz.length; c++) {
+                    System.out.println(" " + matriz[l][c]);
+                }          
+            }
+            
+            System.out.println("\n TRIANGULO INFERIOR DA DIAGONAL PRINCIPAL:");
+
+            for (int l = 1; l < matriz.length; l++) {
+                for (int c = 0; c < l; c++) {
+                    System.out.println(" " + matriz[l][c]);
+                }         
+            }
 
 
 
