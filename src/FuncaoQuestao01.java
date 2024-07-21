@@ -6,7 +6,7 @@ public class FuncaoQuestao01 {
         sublinhado("*");
         System.out.println("\n ANITA LOPES ");
         sublinhado("#");
-        System.out.println("\n GUTO GRACIA ");
+        System.out.println("\n GUTO GARCIA ");
         sublinhado("@");
    
     }

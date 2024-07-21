@@ -13,17 +13,11 @@ public class FuncaoQuestao02 {
         System.out.print("\n DIGITE UM NUMERO: ");
         int num = scanner.nextInt();
         System.out.println(" DOBRO: " + dobro(num));
-
-   
     }
-    
-
 
     }
     public static int dobro(int x){
-    
-        return x*2;
-        
 
+        return x*2;
     }
 }
