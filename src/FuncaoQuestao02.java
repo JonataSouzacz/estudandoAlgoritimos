@@ -9,9 +9,11 @@ public class FuncaoQuestao02 {
 
     Scanner scanner = new Scanner(System.in);
 
+    int num;
+
     for (int i = 0; i <3; i++) {
         System.out.print("\n DIGITE UM NUMERO: ");
-        int num = scanner.nextInt();
+        num = scanner.nextInt();
         System.out.println(" DOBRO: " + dobro(num));
     }
 
