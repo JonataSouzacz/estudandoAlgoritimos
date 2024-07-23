@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class FuncaoQuestao05 {
  
     public static void main(String[] args) {
+
+        // QUESTÃO FEITA SEM ESTA NO LIVRO. APRESENTAÇÃO COM RETORNO.
         
         Scanner scanner = new Scanner(System.in);
 

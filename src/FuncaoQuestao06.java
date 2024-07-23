@@ -1,13 +1,13 @@
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 
 public class FuncaoQuestao06 {
     
     public static void main(String[] args) {
+
+        // QUESTÃO FEITA SEM ESTA NO LIVRO. APRESENTAÇÃO COM VOID.
         
         Scanner scanner = new Scanner(System.in);
-        DecimalFormat df = new DecimalFormat("0.00");
 
         double num1;
         double num2;
@@ -21,11 +21,7 @@ public class FuncaoQuestao06 {
         num3 = scanner.nextDouble();
         scanner.nextLine();
         soma(num1,num2,num3);
-        soma(num1,num2,num3);
-        soma(num1,num2,num3);
         
-
-
     }
 
     public static void soma(double  x,double  y,double  z){
